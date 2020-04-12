@@ -1015,7 +1015,7 @@ li, a, button {
 
 
 @media only screen and (max-width: 1000px) {
-    
+
     header {
         padding: 25px 20%;
         justify-content: space-between;
@@ -1039,6 +1039,24 @@ li, a, button {
 
     .logo-name:hover {
         color: #fff;
+    }
+
+    .cta-button {
+        margin-left: 20px;
+        padding: 9px 25px;
+        background-color: #000;
+        color: rgb(255, 255, 255);
+        border: 1px solid;
+        border-color: #fff;
+        border-radius: 50px;
+        transition: all 0.3s ease 0s;
+    }
+    
+    .cta-button:hover {
+        background-color: #000;
+        padding: 9px 15px;
+        margin-left: 30px;
+        margin-right: 10px;
     }
 
     .landing-h1 {
@@ -1065,4 +1083,256 @@ li, a, button {
         margin-top: 800px;
         margin-left: 450px;
     }
+}
+
+@media only screen and (max-width: 500px) {
+    .cursor__circle {
+        display: none;
+    }
+    .cursor__circle--big {
+        display: none;
+    }
+    .cursor__circle--small {
+        display: none;
+    }
+
+    .landing-h1 {
+        font-size: 35px;
+        margin-top: 250px;
+    }
+
+    .landing-h1-2 {
+        font-size: 35px;
+        margin-top: 300px;
+        width: 50%;
+    }
+
+    .landing-h3 {
+        display: none;
+    }
+
+    .learn-more-btn {
+        margin-top: 465px;
+    }
+
+    #scrolldown-wrapper {
+        margin-left: 375px;
+        margin-top: 625px;
+    }
+
+    .about-h1 {
+        font-size: 35px;
+        margin-top: 100px;
+    }
+
+    .about-p {
+        font-size: 18px;
+        width: 70%;
+        margin-top: 175px;
+    }
+
+    .regular-link {
+        font-size: 18px;
+    }
+
+    .circular-portrait.headshot {
+        display: none;
+    }
+    
+    .circular-portrait {
+        display: none;
+    }
+
+    .leadership-h1 {
+        font-size: 35px;
+        margin-top: 75px;
+        width: 50%;
+    }
+    
+    .leadership-container {
+        height: 80%;
+        width: 100%;
+        margin-top: 125px;
+    }
+    
+    .lead-h2 {
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+    }
+    
+    .lead-p {
+        color: rgb(130, 130, 130);
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+    }
+    
+    .fa-robot {
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
+    
+    .lead-h2-1 {
+        position: absolute;
+        margin-left: 20%;
+        margin-top: 20%;
+        line-height: 25px;
+    }
+    
+    .fa-laptop {
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
+    
+    .lead-h2-2 {
+        position: absolute;
+        margin-left: 60%;
+        margin-top: 20%;
+        line-height: 25px;  
+    }
+    
+    .fa-code {
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
+    
+    .lead-h2-3 {
+        position: absolute;
+        margin-left: 20%;
+        margin-top: 60%;
+        line-height: 25px;
+    }
+    
+    .fa-hiking {
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
+    
+    .lead-h2-4 {
+        position: absolute;
+        margin-left: 60%;
+        margin-top: 60%;
+        line-height: 25px;
+    }
+
+    .hw-img {
+        margin-top: 10%;
+        width: 80%;
+    }
+
+    .exp-1-sa {
+        font-size: 14px;
+        line-height: 30px;
+        width: 80%;
+        margin-right: 0%;
+        margin-top: 165%;
+    }
+
+    .exp-1-sa-h2 {
+        font-size: 20px;
+    }
+
+    .exp-1 {
+        font-size: 14px;
+        line-height: 30px;
+        width: 80%;
+        margin-left: 0%;
+        margin-top: 55%;
+    }
+
+    .exp-1-h1 {
+        font-size: 30px;
+    }
+
+    .exp-1-p1 {
+        margin-top: 3%;
+    }
+
+    .exp-1-p2 {
+        margin-top: 3%;
+    }
+
+    .exp-1-dates {
+        font-size: 20px;
+        margin-bottom: 1%;
+    }
+
+/*---------------------------------*/
+
+    .icr-img {
+        margin-top: 50%;
+        margin-left: 20%;
+    }
+    
+    .exp-2 {
+        font-size: 14px;
+        line-height: 30px;
+        width: 80%;
+        margin-left: 0%;
+        margin-top: 100%;
+    }
+    
+    .exp-2-h1 {
+        font-size: 30px;
+    }
+    
+    .exp-2-p1 {
+        margin-top: 3%;
+    }
+    
+    .exp-2-dates {
+        font-size: 20px;
+        margin-bottom: 1%;
+    }
+    
+    .exp-2-sa {
+        font-size: 14px;
+        line-height: 30px;
+        width: 80%;
+        margin-top: 152%;
+    }
+    
+    .exp-2-sa-h2 {
+        font-size: 20px;
+        
+    }
+
+/*----------------------------------*/
+
+    .siemens-img {
+        margin-top: 40%;
+        width: 80%;
+    }
+    
+    .exp-3 {
+        font-size: 14px;
+        line-height: 30px;
+        width: 80%;
+        margin-left: 0%;
+        margin-top: 90%;
+    }
+    
+    .exp-3-h1 {
+        font-size: 30px;
+    }
+    
+    .exp-3-p1 {
+        margin-top: 3%;
+    }
+    
+    .exp-3-dates {
+        font-size: 20px;
+    }
+    
+    .exp-3-sa {
+        font-size: 14px;
+        line-height: 30px;
+        width: 80%;
+        margin-top: 165%;
+    }
+    
+    .exp-3-sa-h2 {
+        font-size: 20px;
+    }
+
 }
