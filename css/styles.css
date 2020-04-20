@@ -204,6 +204,32 @@ li, a, button {
     border: 2px solid transparent;
 }
 
+.resume-btn {
+    text-align: center;
+    display: inline-block;
+    padding: 9px 25px;
+    font-size: 18px;
+    z-index: 10;
+    border: 2px solid transparent;
+    position: absolute;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 725px;
+    margin-left: 30%;
+	color: rgb(0, 204, 255);
+    background-color: rgb(33, 33, 33);
+    border-radius: 50px;
+    border: 2px solid;
+    transition: .2s ease-in;
+}
+
+.resume-btn:hover {
+    border-radius: 8px;
+    color: black;
+    background-color: rgb(0, 204, 255);
+    box-shadow: 0 3px 20px rgb(0, 204, 255, 0.3);
+    border: 2px solid transparent;
+}
+
 /* Landing Page Scrolldown Animation */
 #scrolldown-wrapper {
     display: table;
@@ -1008,6 +1034,10 @@ li, a, button {
         margin-top: 600px;
     }
 
+    .resume-btn {
+        margin-top: 600px;
+    }
+
     #scrolldown-wrapper {
         display: none;
     }
@@ -1078,6 +1108,10 @@ li, a, button {
         margin-top: 800px;
     }
 
+    .resume-btn {
+        margin-top: 800px;
+    }
+
     #scrolldown-wrapper {
         display: table;
         margin-top: 800px;
@@ -1112,6 +1146,10 @@ li, a, button {
     }
 
     .learn-more-btn {
+        margin-top: 465px;
+    }
+
+    .resume-btn {
         margin-top: 465px;
     }
 
