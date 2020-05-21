@@ -165,7 +165,7 @@ header {
 #hero {
     background-color: rgb(24, 24, 24);
     color: #fff;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .hero__text {
