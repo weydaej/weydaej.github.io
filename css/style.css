@@ -31,6 +31,36 @@ a {
 
 /* Site CSS --------------------------------------------------------------*/
 
+.row {
+    /* display: flex => flex container */
+    display: flex;
+    /* default = row */
+    flex-direction: row;
+    /* gap: 100px "only works in Firefox rn" */
+    justify-content: space-between;
+}
+
+.row2 {
+    /* display: flex => flex container */
+    display: flex;
+    /* default = row */
+    flex-direction: row;
+    /* gap: 100px "only works in Firefox rn" */
+    justify-content: space-between;
+}
+
+.col2 {
+    width: 65%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1250px;
+    width: 65%;
+}
+
+/* ------------------------------------------------------- */
+
 /* nav */
 header {
     background: #000;
@@ -107,37 +137,6 @@ header {
 
 /* ------------------------------------------------------- */
 
-.row {
-    /* display: flex => flex container */
-    display: flex;
-    /* default = row */
-    flex-direction: row;
-    /* gap: 100px "only works in Firefox rn" */
-    justify-content: space-between;
-}
-
-.row2 {
-    /* display: flex => flex container */
-    display: flex;
-    /* default = row */
-    flex-direction: row;
-    /* gap: 100px "only works in Firefox rn" */
-    justify-content: space-between;
-}
-
-.col2 {
-    width: 65%;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 1250px;
-    width: 65%;
-}
-
-/* ------------------------------------------------------- */
-
-
 /* hero Section */
 #hero {
     background-color: rgb(24, 24, 24);
@@ -189,6 +188,8 @@ header {
     border-radius: 8px;
     color: #000;
 }
+
+/* ------------------------------------------------------- */
 
 /* two-col Section */
 #two-col {
@@ -285,6 +286,8 @@ header {
     min-width: 22rem;
 }
 
+/* ------------------------------------------------------- */
+
 /* two-by Section */
 
 #two-by {
@@ -379,36 +382,7 @@ header {
     color: rgb(160, 160, 160);
 }
 
-/* contact section */
-#contact {
-    /* height: 100vh; */
-    overflow: hidden;
-    background-color: #000;
-    outline: none;
-}
-
-.contact-container {
-    margin: 25rem auto;
-    width: 65%;
-    opacity: .75;
-    color: #fff;
-
-    /* border: 2px solid red; */
-}
-
-.contact-h1 {
-    min-width: 22rem;
-    font-size: 2.5rem;
-}
-
-.contact-link {
-    text-decoration: none;
-    color: rgb(0, 204, 255);
-}
-
-.contact-link:hover {
-    opacity: .75;
-}
+/* ------------------------------------------------------- */
 
 /* experience -------------------------------------- */
 
@@ -473,7 +447,7 @@ header {
 }
 
 .exp__h1-2 {
-    padding-top: 5rem;
+    padding-top: 2.5rem;
     color: rgb(231,231,231);
 }
 
@@ -503,7 +477,7 @@ header {
 }
 
 .exp__h1-3 {
-    padding-top: 5rem;
+    padding-top: 2.5rem;
     color: rgb(231,231,231);
 }
 
@@ -523,6 +497,41 @@ header {
     border-left: 3px solid #f37021;
     padding-bottom: 5rem;
 }
+
+/* ------------------------------------------------------- */
+
+/* contact section */
+#contact {
+    /* height: 100vh; */
+    overflow: hidden;
+    background-color: #000;
+    outline: none;
+}
+
+.contact-container {
+    margin: 25rem auto;
+    width: 65%;
+    opacity: .75;
+    color: #fff;
+
+    /* border: 2px solid red; */
+}
+
+.contact-h1 {
+    min-width: 22rem;
+    font-size: 2.5rem;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: rgb(0, 204, 255);
+}
+
+.contact-link:hover {
+    opacity: .75;
+}
+
+/* ------------------------------------------------------- */
 
 /* media queries */
 @media (max-width: 600px) {
@@ -565,13 +574,13 @@ header {
     }
 
     .hero__text {
-        margin: 18rem 0;
+        margin: 12rem 0;
         font-size: 1.125rem !important;
-        min-width: 22rem;
+        min-width: 18rem;
     }
 
     .hero__btn:hover {
-        background-color: #000;
+        background-color: rgb(24, 24, 24);
         box-shadow: 0px 0px 0px;
         border: solid 2px;
         border-radius: 50px;
