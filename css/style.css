@@ -147,7 +147,7 @@ header {
 }
 
 .hero__text {
-    margin: 10rem 0;
+    margin: 15rem 0;
     min-width: 20.3125rem;
     width: 80%;
     font-size: 1.6rem;
@@ -490,7 +490,7 @@ header {
 }
 
 .line-2 {
-    border-left: 3px solid #000080;
+    border-right: 3px solid #000080;
     padding-bottom: 2.5rem;
 }
 
@@ -565,9 +565,9 @@ header {
     }
 
     .hero__text {
-        margin: 8rem auto;
+        margin: 18rem 0;
         font-size: 1.125rem !important;
-        min-width: 17rem;
+        min-width: 22rem;
     }
 
     .hero__btn:hover {
