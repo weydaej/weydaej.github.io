@@ -164,7 +164,7 @@ header {
 
 .hero__text--p {
     line-height: 2em;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
     opacity: .75;
 }
 
@@ -542,6 +542,10 @@ header {
 }
 
 @media (max-width: 900px) {
+    .hero__text {
+        margin: 8rem 0;
+    }
+
     .two-col__text {
         font-size: 1.125rem !important;
         min-width: 17rem;
@@ -574,7 +578,7 @@ header {
     }
 
     .hero__text {
-        margin: 12rem 0;
+        margin: 10rem 0;
         font-size: 1.125rem !important;
         min-width: 18rem;
     }
