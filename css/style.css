@@ -146,7 +146,7 @@ header {
 }
 
 .hero__text {
-    margin: 10rem 0;
+    margin: 8rem 0;
     min-width: 20.3125rem;
     width: 80%;
     font-size: 1.6rem;
@@ -542,9 +542,6 @@ header {
 }
 
 @media (max-width: 900px) {
-    .hero__text {
-        margin: 8rem 0;
-    }
 
     .two-col__text {
         font-size: 1.125rem !important;
