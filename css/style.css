@@ -578,7 +578,6 @@ header {
     }
 
     .hero__text {
-        margin: 10rem 0;
         font-size: 1.125rem !important;
         min-width: 18rem;
     }
