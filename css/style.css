@@ -29,36 +29,6 @@ a {
     user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
   }
 
-/* Cursor --------------------------------------------------------------*/
-/* .cursor {
-    pointer-events: none;
-    position: absolute;
-    z-index: 501;
-}
-.cursor__circle {
-    position: fixed;
-    top: 0;
-    left: 0;
-    mix-blend-mode: difference;
-    z-index: 501;
-    transform: translateX(-50%) translateY(-50%);
-}
-.cursor__circle--big {
-    stroke: #ffffff;
-    position: fixed;
-    fill: transparent;
-    mix-blend-mode: difference;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: 501;
-}
-.cursor__circle--small {
-    fill: #ffffff;
-    position: fixed;
-    mix-blend-mode: difference;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: 501;
-} */
-
 /* Site CSS --------------------------------------------------------------*/
 
 /* nav */
@@ -164,6 +134,7 @@ header {
     max-width: 1250px;
     width: 65%;
 }
+
 /* ------------------------------------------------------- */
 
 
@@ -283,8 +254,8 @@ header {
     border-radius: 50px;
     color: rgb(0, 204, 255);
     display: inline-block;
-    font-size: 1rem;
-    padding: 0 8%;
+    font-size: .75em;
+    padding: .01em 2em;
     text-decoration: none;  
     text-transform: lowercase;
     transition: .2s ease-in;
@@ -689,10 +660,6 @@ header {
 
     .exp__p {
         font-size: 1rem;
-    }
-
-    .about__btn {
-        padding: 0 6%;
     }
 
 }
