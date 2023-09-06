@@ -8,8 +8,14 @@ body {
 .mac-toolbar {
     background-color: #808080;
     display: flex;
+    justify-content: space-between; /* Spread buttons and date to the edges */
+    align-items: center; /* Vertically center the date */
     padding: 10px;
-    justify-content: flex-start; /* Align buttons to the left */
+}
+
+.mac-buttons {
+    display: flex;
+    align-items: center; /* Vertically center the buttons */
 }
 
 .mac-button {
@@ -22,11 +28,17 @@ body {
     cursor: pointer;
     transition: background-color 0.3s;
     font-family: 'Chicago', 'Geneva', Arial, sans-serif;
-    border-radius: 5px; /* Rounded edges */
+    border-radius: 5px;
 }
 
 .mac-button:hover {
-    background-color: rgba(208, 208, 208, 0.7); /* Slightly transparent hover background */
+    background-color: rgba(208, 208, 208, 0.7);
+}
+
+.date-time {
+    color: #000;
+    font-family: 'Chicago', 'Geneva', Arial, sans-serif; /* Match font family */
+    font-size: 16px; /* Adjust font size to match the buttons */
 }
 
 .content {

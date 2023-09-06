@@ -6,14 +6,18 @@
 </head>
 <body>
     <div class="mac-toolbar">
-        <button class="mac-button">About Me</button>
-        <button class="mac-button">Technical Skills</button>
-        <button class="mac-button">Education</button>
-        <button class="mac-button">Projects</button>
-        <button class="mac-button">Professional Experience</button>
+        <div class="mac-buttons">
+            <button class="mac-button">About Me</button>
+            <button class="mac-button">Professional Experience</button>
+            <button class="mac-button">Technical Skills</button>
+            <button class="mac-button">Projects</button>
+            <button class="mac-button">Education</button>
+        </div>
+        <div class="date-time" id="date-time">Loading...</div> <!-- Date and time display -->
     </div>
     <div class="content">
         <!-- Your content goes here -->
     </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
