@@ -1,0 +1,314 @@
+.fcf-body {
+  margin: 12rem 0 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  border: none;
+  width: 100%;
+}
+
+.header-contact-buttons-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-button {
+  border: 1px;
+  border-color: #033dff;
+  border-radius: .5rem;
+  border-style: solid;
+  background-color: #033dff;
+  color: white;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.35rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  letter-spacing: .25rem;
+  filter: drop-shadow(.25rem .25rem .5rem silver);
+  overflow: hidden;
+  transition: all .3s;
+  opacity: 0;
+  margin-bottom: 4rem;
+}
+
+.fa-arrow-left {
+  padding-right: .75rem;
+}
+
+/* Social Buttons */
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.GH-svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all .3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.github {
+  width: 40px;
+  padding: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  background: #000000;
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .3s;
+  margin: auto;
+}
+
+.GHBG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  z-index: -1;
+  border-radius: 8px;
+  pointer-events: none;
+  transition: all .3s;
+}
+
+.github:hover {
+  background: transparent;
+}
+
+.github:hover .GHBG {
+  transform: rotate(30deg);
+  transform-origin: bottom;
+}
+
+.github:hover .GH-svgContainer {
+  background-color: rgba(128, 128, 128, 0.568);
+  background: rgba(128, 128, 128, 0.404);
+  backdrop-filter: blur(4px);
+}
+
+/* LinkedIn Social Button */
+.LI-svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 8px;
+  transition: all .3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.linkedin {
+  width: 40px;
+  padding: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  background: #0077B5;
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .3s;
+  margin: auto;
+  fill: rgb(255, 255, 255);
+}
+
+.LIBG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #0077B5;
+  z-index: -1;
+  border-radius: 8px;
+  pointer-events: none;
+  transition: all .3s;
+}
+
+.linkedin:hover {
+  background: transparent;
+}
+
+.linkedin:hover .LIBG {
+  transform: rotate(30deg);
+  transform-origin: bottom;
+}
+
+.linkedin:hover .LI-svgContainer {
+  background-color: rgba(128, 128, 128, 0.568);
+  background: rgba(128, 128, 128, 0.404);
+  backdrop-filter: blur(4px);
+}
+
+/* Contact Form */
+#fcf-form {
+  display: block;
+  width: 50%;
+  margin: auto;
+  opacity: 0;
+}
+
+.fcf-form-group {
+  margin-bottom: 1rem;
+}
+
+.fcf-input-group {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.fcf-form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  outline: none;
+  border-radius: .45rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.fcf-form-control:focus {
+  border: 1px solid #313131;
+}
+
+select.fcf-form-control[size], select.fcf-form-control[multiple] {
+  height: auto;
+}
+
+textarea.fcf-form-control {
+  height: auto;
+}
+
+label.fcf-label {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+.fcf-btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fcf-btn {
+      transition: none;
+  }
+}
+
+.fcf-btn:hover {
+  color: #212529;
+  text-decoration: none;
+}
+
+.fcf-btn:focus, .fcf-btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.fcf-btn-primary {
+  color: #fff;
+  background-color: #033dff;
+  border-color: #033dff;
+  font-weight: 400;
+  font-size: 1.35rem;
+  padding: 1rem 2rem;
+  margin: 2rem 0 0 0;
+  text-decoration: none;
+  letter-spacing: .25rem;
+  filter: drop-shadow(.25rem .25rem .5rem silver);
+  overflow: hidden;
+  transition: all .3s;
+}
+
+.fcf-btn-primary:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.fcf-btn-primary:focus, .fcf-btn-primary.focus {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
+  padding: .75rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+.fcf-btn-block {
+  display: block;
+  width: 100%;
+}
+
+.fcf-btn-block+.fcf-btn-block {
+  margin-top: 0.5rem;
+}
+
+input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
+  width: 100%;
+}
+
+/* Footer */
+.contact-footer {
+  margin: 0 auto;
+  width: 50%;
+}
