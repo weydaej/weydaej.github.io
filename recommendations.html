@@ -173,6 +173,7 @@
         <button
           type="button"
           class="bg-gray-800 hover:bg-gray-900 text-white font-semibold py-3 px-4 md:py-2 px-4 rounded-lg shadow-lg focus:outline-none focus:none transition-bg duration-300"
+          onclick="copyText()"
           data-tooltip-target="tooltip-click"
           data-tooltip-trigger="click"
           data-tooltip-placement="bottom"
@@ -238,5 +239,12 @@
     <script 
       src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"
     ></script>
+    <script> 
+      function copyText() { 
+          /* Copy text into clipboard */ 
+          navigator.clipboard.writeText 
+              ("emily.weyda@gmail.com"); 
+      } 
+    </script> 
   </body>
 </html>
