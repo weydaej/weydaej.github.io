@@ -17,10 +17,14 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-sans bg-white min-h-screen flex flex-col py-10 md:py-40">
+  <body
+    class="lg:w-auto px-5 py-20 md:py-40 font-sans bg-white min-h-screen flex flex-col select-none"
+    style="visibility: hidden;"
+  >
+    <script>0</script>
     <!-- Header Section -->
     <section
-      class="px-5 w-1/1 lg:w-4/5 mx-auto"
+      class="w-1/1 lg:w-11/12 mx-auto"
     >
         <div class="flex flex-row">
           <h1 class="text-4xl font-bold text-left text-black pt-10">
@@ -31,7 +35,7 @@
               class="rounded-full overflow-hidden w-24 h-24 ml-8 md:mt-0 bg-gray-300"
             >
               <img
-                src="imgs/portrait.jpg"
+                src="src/imgs/portrait.jpg"
                 alt="Portrait"
                 class="w-full h-full object-cover"
                 draggable="false"
@@ -40,29 +44,29 @@
           </div>
         </div>
 
-        <p class="text-xl font-normal text-left text-gray-600 py-4">
+        <p class="lg:w-2/3 max-w-screen-lg text-xl font-normal text-left text-gray-600 py-4">
           I'm a <b>Backend Software Engineer</b> with over four years of industry
           experience. I love solving hard problems, building cool things, and
           collaborating with smart people. My most recent work involved
           designing systems to optimize access to geospatial data using Python
           and Golang, as well as migration initiatives with AWS & GCP.
         </p>
-        <div class="flex flex-col space-y-4 md:space-x-4 md:flex-row">
+        <div class="lg:w-5/6 flex flex-col space-y-4 md:space-x-4 md:flex-row">
           <div
           class="flex space-y-4 md:space-y-4 md:space-x-4 flex-col md:flex-row"
           >
           <!-- CV View/Download -->
           <button
-            onclick="window.open('EmilyWeyda_Resume.pdf')"
+            onclick="window.open('src/files/EmilyWeyda_Resume.pdf')"
             target="_blank"
             rel="noopener noreferrer"
-            class="bg-blue-500 hover:bg-blue-700 text-white font-semibold mt-4 py-3 px-4 md:px-4 rounded-lg shadow-lg focus:outline-none focus:none transition-bg duration-300"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-semibold mt-4 py-3 px-4 md:px-4 rounded-lg shadow-lg focus:transparent transition-bg duration-300"
           >
             Resume
           </button>
           <!-- Recommendations Page Button -->
           <button
-            class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-3 px-4 md:py-2 md:px-4 rounded-lg shadow-lg focus:outline-none focus:none transition-bg duration-300"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-3 px-4 md:py-2 md:px-4 rounded-lg shadow-lg focus:transparent transition-bg duration-300"
             type="button"
             name="Recommendations"
             onclick="document.location='recommendations.html'"
@@ -75,7 +79,7 @@
           <div class="flex flex-col mb-8 md:flex-row">
             <button
               type="button"
-              class="bg-gray-800 hover:bg-gray-900 text-white font-semibold py-3 px-4 md:py-2 px-4 rounded-lg shadow-lg focus:outline-none focus:none transition-bg duration-300"
+              class="bg-gray-800 hover:bg-gray-900 text-white font-semibold py-3 px-4 md:py-2 px-4 rounded-lg shadow-lg focus:transparent transition-bg duration-300"
               onclick="copyText()"
               data-tooltip-target="tooltip-click"
               data-tooltip-trigger="click"
@@ -98,7 +102,7 @@
                 onclick="window.open('https://github.com/weydaej')"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="bg-gray-800 hover:bg-gray-900 text-white font-semibold py-4 px-2 md:py-1 md:px-1 rounded-lg shadow-lg focus:outline-none focus:none transition-bg duration-300"
+                class="bg-gray-800 hover:bg-gray-900 text-white font-semibold py-4 px-2 md:py-1 md:px-1 rounded-lg shadow-lg focus:transparent transition-bg duration-300"
               >
                 <span class="flex items-center px-2">
                   <svg
@@ -115,7 +119,7 @@
                 onclick="window.open('https://www.linkedin.com/in/emilyweyda/')"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-4 px-2 md:py-1 md:px-1 rounded-lg shadow-lg focus:outline-none focus:none transition-bg duration-300"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-4 px-2 md:py-1 md:px-1 rounded-lg shadow-lg focus:transparent transition-bg duration-300"
               >
                 <span class="flex items-center px-2">
                   <svg
@@ -135,11 +139,11 @@
 
     <!-- Footer Section -->
     <footer
-      class="w-1/1 lg:w-4/5 py-8 px-5 mx-0 lg:mx-auto text-center"
+      class="w-1/1 lg:w-11/12 py-8 px-0 lg:mx-auto text-center"
     >
-      <div class="text-xs space-y-4 md:text-left">
+      <div class="text-xs md:text-left">
         <p>Built with Tailwind. Hosted on GitHub Pages.</p>
-        <p>&copy; 2023 - <b>Designed & Coded by Emily Weyda.</b></p>
+        <p>&copy; 2024 - <b>Designed & Developed by Emily Weyda.</b></p>
       </div>
     </footer>
     <!-- ionic icons scripts -->
@@ -154,12 +158,8 @@
     <script 
       src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"
     ></script>
-    <script> 
-      function copyText() { 
-          /* Copy text into clipboard */ 
-          navigator.clipboard.writeText 
-              ("emily.weyda@gmail.com"); 
-      } 
-    </script> 
+    <!-- Custom -->
+    <script src="scripts/visibility.js"></script>
+    <script src="scripts/copy-text.js"></script>
   </body>
 </html>
