@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html 
+  lang="en"
+  dir="ltr"
+>
   <head>
     <meta
       name="viewport"
@@ -16,9 +19,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" 
       rel="stylesheet"
     />
+    <script type="text/javascript" src="scripts/theme-toggle.js"></script>
   </head>
   <body
-    class="lg:w-auto px-5 py-20 md:py-40 font-sans bg-white min-h-screen flex flex-col select-none"
+    class="lg:w-auto px-5 py-20 md:py-40 font-sans bg-gray-200 dark:bg-gray-900 min-h-screen flex flex-col select-none"
     style="visibility: hidden;"
   >
     <script>0</script>
@@ -27,7 +31,7 @@
       class="w-1/1 lg:w-11/12 mx-auto"
     >
         <div class="flex flex-row">
-          <h1 class="text-4xl font-bold text-left text-black pt-10">
+          <h1 class="text-4xl font-bold text-left text-black dark:text-gray-300 pt-10">
             Hi, I'm Emily!
           </h1>
           <div class="w-1/3 lg:w-3/3">
@@ -44,7 +48,7 @@
           </div>
         </div>
 
-        <p class="lg:w-2/3 max-w-screen-lg text-xl font-normal text-left text-gray-600 py-4">
+        <p class="lg:w-2/3 max-w-screen-lg text-xl font-normal text-left text-gray-600 dark:text-gray-400 py-4">
           I'm a <b>Backend Software Engineer</b> with over four years of industry
           experience. I love solving hard problems, building cool things, and
           collaborating with smart people. My most recent work involved
@@ -60,13 +64,13 @@
             onclick="window.open('src/files/EmilyWeyda_Resume.pdf')"
             target="_blank"
             rel="noopener noreferrer"
-            class="bg-blue-500 hover:bg-blue-700 text-white font-semibold mt-4 py-3 px-4 md:px-4 rounded-lg shadow-lg focus:transparent transition-bg duration-300"
+            class="bg-blue-500 hover:bg-blue-700 text-white dark:text-gray-300 font-semibold mt-4 py-3 px-4 md:px-4 rounded-lg shadow-lg focus:transparent transition-bg duration-300"
           >
             Resume
           </button>
           <!-- Recommendations Page Button -->
           <button
-            class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-3 px-4 md:py-2 md:px-4 rounded-lg shadow-lg focus:transparent transition-bg duration-300"
+            class="bg-blue-500 hover:bg-blue-700 text-white dark:text-gray-300 font-semibold py-3 px-4 md:py-2 md:px-4 rounded-lg shadow-lg focus:transparent transition-bg duration-300"
             type="button"
             name="Recommendations"
             onclick="document.location='recommendations.html'"
@@ -79,7 +83,7 @@
           <div class="flex flex-col mb-8 md:flex-row">
             <button
               type="button"
-              class="bg-gray-800 hover:bg-gray-900 text-white font-semibold py-3 px-4 md:py-2 px-4 rounded-lg shadow-lg focus:transparent transition-bg duration-300"
+              class="bg-gray-800 hover:bg-gray-900 dark:hover:bg-gray-700 text-white dark:text-gray-300 font-semibold py-3 px-4 md:py-2 px-4 rounded-lg shadow-lg focus:transparent transition-bg duration-300"
               onclick="copyText()"
               data-tooltip-target="tooltip-click"
               data-tooltip-trigger="click"
@@ -90,7 +94,7 @@
             </button>
             <div id="tooltip-click" 
               role="tooltip"
-              class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-green-500 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700 transition-opacity duration-300"
+              class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white dark:text-gray-300 bg-green-500 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700 transition-opacity duration-300"
             >
               Copied!
               <div class="tooltip-arrow" data-popper-arrow></div>
@@ -102,7 +106,7 @@
                 onclick="window.open('https://github.com/weydaej')"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="bg-gray-800 hover:bg-gray-900 text-white font-semibold py-4 px-2 md:py-1 md:px-1 rounded-lg shadow-lg focus:transparent transition-bg duration-300"
+                class="bg-gray-800 hover:bg-gray-900 dark:hover:bg-gray-700 text-white font-semibold py-4 px-2 md:py-1 md:px-1 rounded-lg shadow-lg focus:transparent transition-bg duration-300"
               >
                 <span class="flex items-center px-2">
                   <svg
@@ -141,7 +145,7 @@
     <footer
       class="w-1/1 lg:w-11/12 py-8 px-0 lg:mx-auto text-center"
     >
-      <div class="text-xs md:text-left">
+      <div class="text-xs text-gray-500 md:text-left">
         <p>Built with Tailwind. Hosted on GitHub Pages.</p>
         <p>&copy; 2024 - <b>Designed & Developed by Emily Weyda.</b></p>
       </div>
